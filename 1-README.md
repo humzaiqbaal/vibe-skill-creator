@@ -14,20 +14,35 @@ This package teaches you how to build world-class Claude skills that actually im
 
 ## How to Use
 
-### In claude.ai (Projects)
+### In Claude Desktop (claude.ai)
+
+**Option A: Project Knowledge (Recommended)**
 1. Create a new Project
-2. Go to Project Settings → Custom Instructions
-3. Paste the contents of `SKILL.md`
+2. Click "Add Content" → "Add text content"
+3. Paste the contents of `2-vibe-skill-creator.md`
 4. Start chatting: "Help me create a skill for [your domain]"
 
-### In claude.ai (Direct)
-1. Upload `SKILL.md` as a file
-2. Say: "Use this skill to help me build a skill for [your domain]"
+**Option B: Upload as File**
+1. In any chat, click the attachment icon
+2. Upload `2-vibe-skill-creator.md`
+3. Say: "Use this skill to help me build a skill for [your domain]"
 
 ### In Claude Code
-1. Save `SKILL.md` to your project's `docs/skills/vibe-skill-creator/` folder
-2. Or add to `.claude/commands/` as a slash command
-3. Reference it: "Use the vibe-skill-creator skill to help me build..."
+
+**Option A: As a Skill (Recommended)**
+1. Create folder: `docs/skills/vibe-skill-creator/`
+2. Save as `SKILL.md` in that folder
+3. Claude Code auto-detects skills in `docs/skills/*/SKILL.md`
+4. Say: "Use the vibe-skill-creator skill" or just trigger it
+
+**Option B: As a Slash Command**
+1. Create folder: `.claude/commands/`
+2. Save as `build-skill.md`
+3. Use by typing: `/build-skill`
+
+**Option C: In CLAUDE.md**
+1. Add to your project's `CLAUDE.md` file
+2. Always available in that project
 
 ---
 
