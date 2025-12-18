@@ -16,16 +16,26 @@ This package teaches you how to build world-class Claude skills that actually im
 
 ### In Claude Desktop (claude.ai)
 
-**Option A: Project Knowledge (Recommended)**
+**Option A: Install as Custom Skill (Recommended)**
+1. Create a folder named `vibe-skill-creator`
+2. Save `2-vibe-skill-creator.md` as `SKILL.md` inside that folder
+3. ZIP the folder
+4. Go to Settings → Capabilities
+5. Click "Upload skill" and upload your ZIP
+6. The skill appears in your Skills list and can be toggled on/off
+
+**Option B: Add to Project Knowledge**
 1. Create a new Project
 2. Click "Add Content" → "Add text content"
 3. Paste the contents of `2-vibe-skill-creator.md`
 4. Start chatting: "Help me create a skill for [your domain]"
 
-**Option B: Upload as File**
+**Option C: Upload as File (per-chat)**
 1. In any chat, click the attachment icon
 2. Upload `2-vibe-skill-creator.md`
 3. Say: "Use this skill to help me build a skill for [your domain]"
+
+**Note:** Option A installs the skill permanently and it auto-activates when relevant. Options B and C work per-project or per-chat.
 
 ### In Claude Code
 
