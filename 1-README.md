@@ -29,20 +29,26 @@ This package teaches you how to build world-class Claude skills that actually im
 
 ### In Claude Code
 
-**Option A: As a Skill (Recommended)**
-1. Create folder: `docs/skills/vibe-skill-creator/`
+**Option A: Project Skill (Recommended for teams)**
+1. Create folder in your project: `.claude/skills/vibe-skill-creator/`
 2. Save as `SKILL.md` in that folder
-3. Claude Code auto-detects skills in `docs/skills/*/SKILL.md`
-4. Say: "Use the vibe-skill-creator skill" or just trigger it
+3. Commit to git — teammates get it automatically
+4. Claude auto-invokes based on the description (no need to reference it)
 
-**Option B: As a Slash Command**
+**Option B: Personal Skill**
+1. Create folder: `~/.claude/skills/vibe-skill-creator/`
+2. Save as `SKILL.md` in that folder
+3. Available in all your Claude Code projects
+
+**Option C: As a Slash Command**
 1. Create folder: `.claude/commands/`
 2. Save as `build-skill.md`
-3. Use by typing: `/build-skill`
+3. Invoke manually by typing: `/build-skill`
 
-**Option C: In CLAUDE.md**
-1. Add to your project's `CLAUDE.md` file
-2. Always available in that project
+**How Skills Work:**
+- Skills are **model-invoked** — Claude decides when to use them based on the description
+- You don't explicitly call them like slash commands
+- Just say "help me create a skill" and Claude uses it automatically
 
 ---
 
